@@ -70,6 +70,9 @@
     }
 
     function save_user (User $user){
-        // COMPLETAR PARA GUARDAR EL USUARIO
+        $sql = "INSERT INTO user (username, password, name, surnames, email)
+                VALUES ('".$user->getUsername()."', '".$user->getPassword()."', '".$user->getName()."', '".$user->getSurnames()."', '".$user->getEmail()."')";
+        $conn = $GLOBALS['conn'];
+        return $conn->query($sql) ;
 
     }
