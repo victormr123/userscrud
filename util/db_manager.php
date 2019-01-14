@@ -66,6 +66,9 @@
     }
 
     function delete_user ($user_id){
+        $sql = "DELETE FROM user WHERE id='".$user_id."'";
+        $conn = $GLOBALS['conn'];
+        return $conn->query($sql) ;
     }
 
     function save_user (User $user){
