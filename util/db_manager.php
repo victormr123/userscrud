@@ -66,22 +66,7 @@
     }
 
     function delete_user ($user_id){
-<<<<<<< HEAD
-        $sql = "DELETE FROM user WHERE id='".$user_id."'";
-        $conn = $GLOBALS['conn'];
-        return $conn->query($sql) ;
-
-=======
->>>>>>> e1da4e191e6a0b16b449e8fa3d99e102b361479b
     }
 
     function save_user (User $user){
-<<<<<<< HEAD
-=======
-        $sql = "INSERT INTO user (username, password, name, surnames, email)
-                VALUES ('".$user->getUsername()."', '".$user->getPassword()."', '".$user->getName()."', '".$user->getSurnames()."', '".$user->getEmail()."')";
-        $conn = $GLOBALS['conn'];
-        return $conn->query($sql) ;
-
->>>>>>> 1b5456edf2e2e680d1262f86b4ceb5a9a0dbfd98
     }
